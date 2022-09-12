@@ -16,11 +16,11 @@ public class Main {
         System.out.println("Значение переменной f с типом float равно " + f );
         System.out.println("Значение переменной d с типом double равно " + d );
 
-        System.out.println("Задача 2");//Задача 2
+        System.out.println("Задача 2");
         float boat = 27.12f;
         long way = 987678965549L;
         double whiskey = 2.786;
-        boolean isMore = whiskey > 5;
+        boolean isMore = whiskey >= 5.3;
         char symbol = 569;
         short height = -159;
         int dog = 27897;
@@ -35,6 +35,20 @@ public class Main {
         int allStudents = studentsL+studentsE+studentsA;
         int paper = 480;
         System.out.println("На каждого ученика рассчитано " + paper/allStudents + " листов бумаги");
+
+        System.out.println("Задача 4");
+        int bottleIn2Min = 16; //Производительность машины для изготовления бутылок - 16 бутылок за 2 минуты
+        int bottleIn1Min = bottleIn2Min/2;
+        System.out.println("За 20 минут машина произвела бутылок " + bottleIn1Min*20 + " штук");
+        int hourInDay = 24;
+        int minInHour = 60;
+        int minInDay = hourInDay*minInHour;
+        System.out.println("За сутки машина произвела бутылок " + bottleIn1Min*minInDay + " штук");
+        int minIn3Day = minInDay*3;
+        System.out.println("За 3 дня машина произвела бутылок " + bottleIn1Min*minIn3Day + " штук");
+        int minInMonth = minInDay*30; // месяц=30 дней
+        System.out.println("За месяц машина произвела бутылок " + bottleIn1Min*minInMonth + " штук");
+
 
     }
 }
