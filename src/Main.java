@@ -27,5 +27,14 @@ public class Main {
         byte cat = 67;
         System.out.println(symbol); //проверка значения
         System.out.println(isMore); //проверка значения
+
+        System.out.println("Задача 3");
+        byte studentsL = 23; //у Людмилы Павловны 23 ученика
+        byte studentsE = 27; //у Анны Сергеевны 27 учеников
+        byte studentsA = 30; //у Екатерины Андреевны 30 учеников
+        int allStudents = studentsL+studentsE+studentsA;
+        int paper = 480;
+        System.out.println("На каждого ученика рассчитано " + paper/allStudents + " листов бумаги");
+
     }
 }
