@@ -49,6 +49,14 @@ public class Main {
         int minInMonth = minInDay*30; // месяц=30 дней
         System.out.println("За месяц машина произвела бутылок " + bottleIn1Min*minInMonth + " штук");
 
+        System.out.println("Задача 5");
+        int cansOfPaint = 120;
+        int forOneClassWhite = 2;
+        int forOneClassBroun = 4;
+        int classesAtSchool = cansOfPaint/(forOneClassWhite+forOneClassBroun);
+        int white = classesAtSchool*forOneClassWhite;
+        int brown = classesAtSchool*forOneClassBroun;
+        System.out.println("В школе, где " + classesAtSchool + " классов, нужно " + white + " банок белой краски и " + brown + " банок коричневой краски");
 
     }
 }
