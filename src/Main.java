@@ -20,13 +20,11 @@ public class Main {
         float boat = 27.12f;
         long way = 987678965549L;
         double whiskey = 2.786;
-        boolean isMore = whiskey >= 5.3;
+        boolean isMore = false;
         char symbol = 569;
         short height = -159;
         int dog = 27897;
         byte cat = 67;
-        System.out.println(symbol); //проверка значения
-        System.out.println(isMore); //проверка значения
 
         System.out.println("Задача 3");
         byte studentsL = 23; //у Людмилы Павловны 23 ученика
@@ -57,6 +55,55 @@ public class Main {
         int white = classesAtSchool*forOneClassWhite;
         int brown = classesAtSchool*forOneClassBroun;
         System.out.println("В школе, где " + classesAtSchool + " классов, нужно " + white + " банок белой краски и " + brown + " банок коричневой краски");
+
+        System.out.println("Задача 6");
+        short bananas = 5; //Бананы – 5 штук (1 банан - 80 грамм)
+        int bananaWeight = bananas*80;
+        short milk = 200; //Молоко – 200 мл (100 мл = 105 грамм)
+        int milkWeight = milk/100*105;
+        short iceCrem = 2; //Мороженое пломбир – 2 брикета по 100 грамм
+        int iceCremWeight = iceCrem*100;
+        short eggs = 4; //Яйца сырые – 4 яйца (1 яйцо - 70 грамм)
+        int eggsWeight = eggs*70;
+        int totalWeightGr = bananaWeight+milkWeight+iceCremWeight+eggsWeight;
+        System.out.println("Общий вес продуктов " + totalWeightGr + " грамм");
+        double totalWeightKg = totalWeightGr/1000.0;
+        System.out.println("Общий вес продуктов " + totalWeightKg + " кг");
+
+        System.out.println("Задача 7");
+        double excessWeight = 7.0;
+        double progress1 = 0.250;
+        double progress2 = 0.5;
+        double day1 = excessWeight/progress1;
+        double day2 = excessWeight/progress2;
+        System.out.println(day1);
+        System.out.println(day2);
+        System.out.println(day2%day1);
+
+        System.out.println("Задача 8");
+        float increase = 1.1f;
+        byte year = 12;
+
+        int salaryMasha = 67760;
+        int salaryMashaInYear = salaryMasha*year;
+        double newSalaryMasha = salaryMasha*increase;
+        double newSalaryMashaInYear = newSalaryMasha*year;
+        double salaryMashaDifference = newSalaryMashaInYear-salaryMashaInYear;
+        System.out.println("Маша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + salaryMashaDifference + " рублей");
+
+        int salaryDen = 83690;
+        int salaryDenInYear = salaryDen*year;
+        double newSalaryDen = salaryDen*increase;
+        double newSalaryDenInYear = newSalaryDen*year;
+        double salaryDenDifference = newSalaryDenInYear-salaryDenInYear;
+        System.out.println("Денис теперь получает " + newSalaryDen + " рублей. Годовой доход вырос на " + salaryDenDifference + " рублей");
+
+        int salaryKris = 76230;
+        int salaryKrisInYear = salaryKris*year;
+        double newSalaryKris = salaryKris*increase;
+        double newSalaryKrisInYear = newSalaryKris*year;
+        double salaryKrisDifference = newSalaryKrisInYear-salaryKrisInYear;
+        System.out.println("Кристина теперь получает " + newSalaryKris + " рублей. Годовой доход вырос на " + salaryKrisDifference + " рублей");
 
     }
 }
